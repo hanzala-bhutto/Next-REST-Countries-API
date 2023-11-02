@@ -2,6 +2,7 @@ import type { Config } from 'tailwindcss'
 
 const config: Config = {
   content: [
+    "./node_modules/flowbite-react/**/*.js",
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
@@ -16,10 +17,20 @@ const config: Config = {
         darkGrayLight: 'hsl(0, 0%, 98%)',
         white: 'hsl(0, 0%, 100%)'
       },
-
+      
+      spacing: {
+        '1c': '1rem',
+        '2c': '2rem',
+        '3c': '3rem',
+        '4c': '4rem',
+        '5c': '5rem',
+        '5.5c': '5.5rem',
+      }
 
     },
   },
-  plugins: [],
+  plugins: [
+    require("flowbite/plugin")
+  ],
 }
 export default config
