@@ -1,6 +1,14 @@
 import Image from 'next/image';
 
-export const CountryCard = ({country}) => {
+interface Country {
+    name: string;
+    population: number;
+    region: string;
+    capital: string;
+    flagImg: string;
+}
+
+export const CountryCard = ({country}: {country:Country}) => {
     return (
         <div className="w-72 bg-white border border-gray-200 cursor-pointer rounded-lg shadow dark:bg-darkBlueDark dark:border-gray-700">
             <div className="h-48 w-full rounded-se-lg bg-primary-500">
