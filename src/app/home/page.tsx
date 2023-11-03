@@ -19,7 +19,7 @@ export default function Home(){
     const [filteredCountries, setFilteredCountries] = useState<Country[]>([]);
     
     useEffect(() => {
-        fetch('http://localhost:3000/api/countries')
+        fetch(`${process.env.BASE_URL}/api/countries`)
         .then((data) =>  data.json())
         .then((data) => {
             setCountries(data.shapeData);

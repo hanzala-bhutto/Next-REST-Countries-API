@@ -9,6 +9,9 @@ const nextConfig = {
           },
         ]
     },
+    env: {
+      BASE_URL: 'https://next-rest-countries-api.vercel.app',
+    },
 };
 
 module.exports = nextConfig;
