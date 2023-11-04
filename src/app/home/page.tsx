@@ -63,11 +63,12 @@ export default function Home(){
                 ?
                 filteredCountries.map((country,index) => {
                     return (
-                    <Link href={`/details`} key={index}><CountryCard key={index} country={country}/></Link>
+                    <Link href={`/details/${country.name}`} key={index}><CountryCard key={index} country={country}/></Link>
                     )
                 })
                 :
-                <p>No Countries to Show !</p>}
+                <p className="dark:text-white">No Countries to show!</p>
+                }
             </section>
         </>
     )
