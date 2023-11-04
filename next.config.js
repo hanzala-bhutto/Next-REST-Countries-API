@@ -10,7 +10,7 @@ const nextConfig = {
         ]
     },
     env: {
-      BASE_URL: 'http://localhost:3000',
+      BASE_URL: 'https://next-rest-countries-api.vercel.app',
     },
 };
 
