@@ -58,7 +58,7 @@ export default function Home(){
                 <Searchbar search={search}/>
                 <Filter filter={filter}/>
             </section>
-            <section className="flex flex-row justify-center flex-wrap gap-[3.3rem] mb-12">
+            <section className="flex flex-row justify-center md:justify-between flex-wrap gap-[2rem] mb-12">
                 {filteredCountries.length
                 ?
                 filteredCountries.map((country,index) => {
